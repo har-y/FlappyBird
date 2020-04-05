@@ -460,8 +460,8 @@ MonoBehaviour:
   pipePrefab: {fileID: 8215336608481241321, guid: e840ac31a77545845a53788192b86b51,
     type: 3}
   container: {fileID: 2072360367}
-  nextSpawnInSeconds: 1
-  distance: 0
+  nextSpawnInSeconds: 1.5
+  distance: 0.4
 --- !u!1 &2072360367
 GameObject:
   m_ObjectHideFlags: 0

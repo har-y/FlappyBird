@@ -29,7 +29,7 @@ public class ObstacleSpawnerBehaviour : MonoBehaviour
 
             _timer = 0;
 
-            Destroy(tmp, 3f);
+            Destroy(tmp, 8f);
         }
 
         _timer += Time.deltaTime;
