@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameoverPanel;
     public GameObject menuPanel;
+    public GameObject scorePanel;
 
 
     // Start is called before the first frame update
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         InactiveTime();
         gameoverPanel.SetActive(true);
+        scorePanel.SetActive(false);
     }
 
     public void RestartButton()
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         ActiveTime();
         menuPanel.SetActive(false);
+        scorePanel.SetActive(true);
     }
 
     public void GameStart()
