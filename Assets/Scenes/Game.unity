@@ -439,7 +439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009764266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -457,8 +457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5de48826e19d543b3a02e7a63d023b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipePrefab: {fileID: 0}
-  container: {fileID: 0}
+  pipePrefab: {fileID: 8215336608481241321, guid: e840ac31a77545845a53788192b86b51,
+    type: 3}
+  container: {fileID: 2072360367}
   nextSpawnInSeconds: 1
   distance: 0
 --- !u!1 &2072360367
