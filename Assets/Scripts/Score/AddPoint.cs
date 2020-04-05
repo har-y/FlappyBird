@@ -15,4 +15,9 @@ public class AddPoint : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Score.score++;
+    }
 }
