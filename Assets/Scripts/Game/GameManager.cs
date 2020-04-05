@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        GameStart();
     }
 
     // Update is called once per frame
@@ -37,15 +37,20 @@ public class GameManager : MonoBehaviour
         gameoverPanel.SetActive(true);
     }
 
-    public void MenuButton()
+    public void RestartButton()
     {
-        gameoverPanel.SetActive(false);
-        menuPanel.SetActive(true);
+        SceneManager.LoadScene(0);
     }
 
     public void Play()
     {
         ActiveTime();
         menuPanel.SetActive(false);
+    }
+
+    public void GameStart()
+    {
+        InactiveTime();
+        menuPanel.SetActive(true);
     }
 }

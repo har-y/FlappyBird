@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public GameManager gameManager;
+
     public float velocity = 1f;
 
     private Rigidbody2D _rB;
@@ -26,5 +28,10 @@ public class PlayerBehaviour : MonoBehaviour
         {
             _rB.velocity = Vector2.up * velocity;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameManager.GameOver();
     }
 }
