@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 390104105}
   - component: {fileID: 390104104}
   - component: {fileID: 390104106}
+  - component: {fileID: 390104107}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -304,6 +305,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &390104107
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390104103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.05}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.68, y: 0.56}
+    newSize: {x: 3.246, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 1
+  serializedVersion: 2
+  m_Size: {x: 3.25, y: 0.45}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
