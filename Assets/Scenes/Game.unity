@@ -420,7 +420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390104103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.85, y: -1, z: 0}
+  m_LocalPosition: {x: 0.85, y: -1.005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1647,6 +1647,7 @@ MonoBehaviour:
   scoreText: {fileID: 1783246080}
   scoreText2: {fileID: 617502808}
   bestScoreText: {fileID: 581473063}
+  score: 0
 --- !u!1 &1937504014
 GameObject:
   m_ObjectHideFlags: 0
