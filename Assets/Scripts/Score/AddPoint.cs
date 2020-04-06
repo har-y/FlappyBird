@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AddPoint : MonoBehaviour
 {
+    private Score _score;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _score = GameObject.Find("Game Manager").GetComponent<Score>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,6 @@ public class AddPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Score.score++;
+        _score.score++;
     }
 }
