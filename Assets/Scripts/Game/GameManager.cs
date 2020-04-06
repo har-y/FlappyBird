@@ -9,10 +9,14 @@ public class GameManager : MonoBehaviour
     public GameObject menuPanel;
     public GameObject scorePanel;
 
+    public Animator animator;
+
+    private Score score;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = GetComponent<Score>();
         GameStart();
     }
 
@@ -37,6 +41,7 @@ public class GameManager : MonoBehaviour
         InactiveTime();
         gameoverPanel.SetActive(true);
         scorePanel.SetActive(false);
+        animator.Play("ScoreBoard");
     }
 
     public void RestartButton()
