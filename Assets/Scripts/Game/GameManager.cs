@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject scorePanel;
 
     public AudioClip audioWing;
+    public AudioClip audioPoint;
 
     public Animator animator;
 
@@ -69,7 +70,11 @@ public class GameManager : MonoBehaviour
 
     public void WingAudio()
     {
-        _audio.clip = audioWing;
-        _audio.Play();
+        _audio.PlayOneShot(audioWing);
+    }
+
+    public void PointAudio()
+    {
+        _audio.PlayOneShot(audioPoint);
     }
 }

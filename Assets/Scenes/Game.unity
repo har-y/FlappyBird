@@ -1633,6 +1633,7 @@ MonoBehaviour:
   menuPanel: {fileID: 57143921}
   scorePanel: {fileID: 1049261608}
   audioWing: {fileID: 8300000, guid: a8500dd47fc79974989540f6b6f8cd5f, type: 3}
+  audioPoint: {fileID: 8300000, guid: e74ec670ac1066e41ba9db4bc89feffb, type: 3}
   animator: {fileID: 2112876172}
 --- !u!114 &1860548111
 MonoBehaviour:
