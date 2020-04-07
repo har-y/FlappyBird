@@ -27,6 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _rB.velocity = Vector2.up * velocity;
+            gameManager.WingAudio();
         }
     }
 
