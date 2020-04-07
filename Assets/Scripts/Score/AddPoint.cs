@@ -5,13 +5,13 @@ using UnityEngine;
 public class AddPoint : MonoBehaviour
 {
     private Score _score;
-    private GameManager _gameManager;
+    private AudioManager _audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         _score = GameObject.Find("Game Manager").GetComponent<Score>();
-        _gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        _audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -23,6 +23,6 @@ public class AddPoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         _score.score++;
-        _gameManager.PointAudio();
+        _audioManager.PointAudio();
     }
 }

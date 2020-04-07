@@ -9,12 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuPanel;
     public GameObject scorePanel;
 
-    public AudioClip audioWing;
-    public AudioClip audioPoint;
-
     public Animator animator;
-
-    private AudioSource _audio;
 
     private Score score;
 
@@ -22,7 +17,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = GetComponent<Score>();
-        _audio = GetComponent<AudioSource>();
         GameStart();
     }
 
@@ -66,15 +60,5 @@ public class GameManager : MonoBehaviour
     {
         InactiveTime();
         menuPanel.SetActive(true);
-    }
-
-    public void WingAudio()
-    {
-        _audio.PlayOneShot(audioWing);
-    }
-
-    public void PointAudio()
-    {
-        _audio.PlayOneShot(audioPoint);
     }
 }
